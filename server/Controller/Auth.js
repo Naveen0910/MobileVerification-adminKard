@@ -2,7 +2,7 @@ let generatedOTP = "";
 
 export const generateOTP = (otp_length) => {
   var digits = "0123456789";
-  let otp = ""; // Initialize as an empty string
+  let otp = "";
   for (let i = 0; i < otp_length; i++) {
     otp += digits[Math.floor(Math.random() * 10)];
   }
@@ -10,7 +10,7 @@ export const generateOTP = (otp_length) => {
 };
 
 export const verifyMobileNumber = async (req, res) => {
-  generatedOTP = generateOTP(4); // Assign the generated OTP to the global variable
+  generatedOTP = generateOTP(4);
   try {
     res.status(200).json({ OTP: generatedOTP });
   } catch (err) {
