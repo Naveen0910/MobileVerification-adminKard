@@ -14,12 +14,7 @@ const App = () => {
     <OtpProvider>
       <Main>
         <Routes>
-          <Route
-            path="/verifyMobile"
-            exact
-            index={true}
-            element={<PhoneNumberInput />}
-          />
+          <Route path="/" exact index={true} element={<PhoneNumberInput />} />
           <Route path="/verifyOTP" exact element={<OtpVerification />} />
           <Route path="/landingpage" exact element={<LandingPage />} />
         </Routes>

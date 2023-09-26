@@ -59,6 +59,7 @@ const OtpInput = () => {
   };
 
   const resendOtp = async () => {
+    setIncorrectOtp(false);
     try {
       const response = await axios.post(`${BASE_URL}/verifyNumber`, {
         mobileNumber: phoneNumber,
@@ -99,7 +100,7 @@ const OtpInput = () => {
           An OTP is sent to +{phoneNumber}
         </p>
         <p
-          onClick={() => navigate("/verifymobile")}
+          onClick={() => navigate("/")}
           style={{
             color: "#F7B348",
             textDecoration: "underline",
