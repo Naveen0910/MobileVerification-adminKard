@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
-import { Snackbar } from "@mui/material";
 import axios from "axios";
 import "react-phone-input-2/lib/style.css";
 import logo from "../Data/AK_logo.png";
 import { BASE_URL } from "../constants";
-import OtpVerification from "./OTPVerification";
 import { useNavigate } from "react-router-dom";
 import { useOtp } from "../Context/context";
 
@@ -16,7 +14,6 @@ const PhoneNumberInput = (props) => {
   const [country, setCountry] = useState("in");
   const [error, setError] = useState(true);
   const [phoneNumberError, setPhoneNumberError] = useState("");
-  const [snackbarOpen, setSnackbarOpen] = useState(false);
 
   const handleCountryChange = (value, country) => {
     setCountry(country.short);
@@ -67,7 +64,10 @@ const PhoneNumberInput = (props) => {
       <img
         src={logo}
         alt="AK Logo"
-        style={{ marginTop: "20vh", marginBottom: "10vh" }}
+        style={{
+          marginTop: "20vh",
+          marginBottom: "10vh",
+        }}
       />
       <div
         style={{

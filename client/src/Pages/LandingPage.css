@@ -1,0 +1,34 @@
+/* styles.css */
+
+/* Default styles for large screens (row direction) */
+.responsive-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    height: 80vh;
+  }
+  
+  .responsive-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    flex-direction: space-around;
+  }
+
+  .responsive-text{
+    padding:10%;
+}
+
+
+  
+  /* Styles for small screens (vertical direction) */
+  @media screen and (max-width: 768px) {
+    .responsive-content {
+      flex-direction: column;
+    }
+
+
+  }
+  
