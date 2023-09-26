@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+.phone-input {
+  width: 300px;
+}
+
+.country-flag-input {
+  display: flex;
+  align-items: center;
+}
+
+.flag-image {
+  width: 32px; 
+  margin-right: 10px; 
+}
+
+.phone-input-field {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
