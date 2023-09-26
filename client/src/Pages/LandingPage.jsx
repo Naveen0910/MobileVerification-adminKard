@@ -1,6 +1,6 @@
 import React from "react";
 import artboard from "../Data/Artboard 1.png";
-import "./LandingPage.css"; // Import your CSS file for styles
+import "./LandingPage.css";
 
 const LandingPage = () => {
   return (

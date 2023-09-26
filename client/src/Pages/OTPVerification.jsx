@@ -7,7 +7,7 @@ import axios from "axios";
 import { BASE_URL } from "../constants";
 
 const OtpInput = () => {
-  const { otp, phoneNumber, setOtp } = useOtp(); // Corrected to use "otp" instead of "phoneNumber"
+  const { otp, phoneNumber, setOtp } = useOtp();
   const navigate = useNavigate();
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [incorrectOtp, setIncorrectOtp] = useState(false);
@@ -75,18 +75,9 @@ const OtpInput = () => {
   };
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <img style={{ marginTop: "10vh" }} src={handLogo} alt="Hand Logo" />
-      <div
-        style={{ fontFamily: "Work Sans", marginTop: "5vh", color: "#333333" }}
-      >
+    <div className="responsive-container">
+      <img src={handLogo} alt="Hand Logo" className="responsive-image" />
+      <div className="responsive-text">
         <p style={{ fontSize: "20px", fontFamily: "Work Sans" }}>
           Please verify Mobile number
         </p>

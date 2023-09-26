@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* Default styles for large screens (row direction) */
 .responsive-container {
     display: flex;
     flex-direction: column;
@@ -23,7 +21,7 @@
 
 
   
-  /* Styles for small screens (vertical direction) */
+ 
   @media screen and (max-width: 768px) {
     .responsive-content {
       flex-direction: column;
